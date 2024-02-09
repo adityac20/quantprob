@@ -1,0 +1,38 @@
+name: quantilerep
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - cuda-version=11.8
+  - pytorch
+  - pytorch-cuda=11.8
+  - cudatoolkit=11.8
+  - torchvision
+  - torchaudio
+  - faiss-cpu=1.7.4
+  - mkl=2021 
+  - blas=1.0=mkl
+  - tqdm
+  - pip
+  - pip:
+    - higra
+    - jupyterlab
+    - python-dotenv
+    - lightning
+    - pydantic
+    - pytorch-metric-learning
+    - uncertainty-calibration
+  - scikit-learn
+  - scikit-image
+  - matplotlib
+  - pandas
+  - seaborn
+  - ipywidgets
+  - numpy
+  - scipy
+  - tensorboard
+
+# Use the following command to create the environment
+# conda env create -f environment.yml --solver=libmamba
